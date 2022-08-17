@@ -19,6 +19,8 @@ module "terraform_state_bucket" {
   bucket         = local.state_bucket
   logging_bucket = local.logging_bucket
 
+  custom_bucket_policy = var.custom_bucket_policy
+
   use_account_alias_prefix = false
 
   enable_s3_public_access_block = var.enable_s3_public_access_block

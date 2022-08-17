@@ -80,3 +80,9 @@ variable "manage_account_alias" {
   default     = true
   description = "Manage the account alias as a resource. Set to 'false' if this behavior is not desired."
 }
+
+variable "custom_bucket_policy" {
+  type        = string
+  default     = ""
+  description = "Pass through a custom bucket policy"
+}
